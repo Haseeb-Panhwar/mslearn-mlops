@@ -3,12 +3,11 @@ name: Train model in dev
 on:
   workflow_dispatch:
     pull_request:
-      branches:
+     branches:
        - main
-      paths:
+     paths:
        - 'src/train-model-parameters.py'
        - 'src/job.yml'
-
 permissions:
   contents: read
   pull-requests: write
